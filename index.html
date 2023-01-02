@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>My Library</h1>
+    <button id="add-btn">Add Book</button>
+    <button id="display-btn">Display Books</button>
+    <br>
+    <br>
+    <div id="main-form">
+
+        <form class="form">
+            <div id="form-col-1">
+                <label for="book_name">Name</label>
+                <label for="book_author">Author</label>
+                <label for="book_status">Status</label>
+            </div>
+            <div id="form-col-2">
+                <input type="text" id="book_name" value="Hunter x Hunter">
+                <input type="text" id="book_author" value="Yoshihiro Togashi">
+                <select name="book_status" id="book_status">
+                    <option value="Read">Read</option>
+                    <option value="Reading">Reading</option>
+                    <option value="toRead">To Read</option>
+                </select>
+            </div>
+        </form>
+        <br>
+        <button id="sumbit-btn">Sumbit</button>
+    </div>
+
+    <br>
+    <div id="content">
+        <br>
+        <br>
+        <div id="display-box">
+           
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
