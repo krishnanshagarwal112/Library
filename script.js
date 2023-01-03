@@ -99,8 +99,8 @@ function check(b){
                 }
             }
             else{
-                alert("Book already there with different author")
-                return false
+                alert(`Changing book's author from ${library[i].author} to ${b.author}`)
+                library.splice(i,i)
             }
         }
     }
