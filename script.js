@@ -20,7 +20,7 @@ add_btn.addEventListener("click",()=>{
     sumbit_btn.style.display= "inline";
     display_box.innerHTML = ""
     count = 1
-    
+
 })
 
 class Book{
@@ -56,7 +56,7 @@ display_btn.addEventListener("click",()=>{
                     <span id="ba">${library[i].author}</span>
                     <span id="br">${library[i].status}</span>
                     </div>
-                    <button id="remove-btn">Remove</button>`
+                    <button class="remove-btn">Remove</button>`
         card.innerHTML = html
         card.classList.add('card')
         display_box.appendChild(card)
@@ -66,14 +66,36 @@ display_btn.addEventListener("click",()=>{
         display_box.innerHTML = ""
     }
     count++;
-    
 
-    
 })
 
 
 sumbit_btn.addEventListener("click",()=>{
     let book = new Book(bn.value, ba.value,br.value, true)
-    library.push(book)
+    if (check(book))  library.push(book)
     form.style.display = "none"
 })
+
+const rem_arr = document.getElementsByClassName("remove-btn")
+
+function check(b){
+    for(let i = 0; i < library.length; i++){
+        if(library[i].name == b.name){
+            if(library[i].author == b.author){
+                if(library[i].status == b.status){
+                    alert("Book already in library")
+                    return false
+                }
+                else{
+                    alert(`Changing book's status from ${library[i].status} to ${b.status}`)
+                    library.splice(i,i)
+                }
+            }
+            else{
+                alert("Book already there with different author")
+                return false
+            }
+        }
+    }
+    return true
+}

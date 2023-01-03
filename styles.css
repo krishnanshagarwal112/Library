@@ -13,7 +13,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     height: 100px;
-    width: 215px;
+    width: 240px;
     column-gap: 15px;
 }
 
@@ -23,7 +23,7 @@ input, select{
     border: 1px gray rebeccapurple;
 }
 
-#add-btn, #sumbit-btn,#display-btn, #remove-btn{
+#add-btn, #sumbit-btn,#display-btn, .remove-btn{
     height: 20px;
     background-color: #A8D1D1;
     border: 1px solid #A8D1D1;
