@@ -56,7 +56,8 @@ display_btn.addEventListener("click",()=>{
                     <span id="ba">${library[i].author}</span>
                     <span id="br">${library[i].status}</span>
                     </div>
-                    <button class="remove-btn">Remove</button>`
+                    `
+                    //<button class="remove-btn">Remove</button>
         card.innerHTML = html
         card.classList.add('card')
         display_box.appendChild(card)
@@ -76,7 +77,13 @@ sumbit_btn.addEventListener("click",()=>{
     form.style.display = "none"
 })
 
-const rem_arr = document.getElementsByClassName("remove-btn")
+// let rem_arr = document.getElementsByClassName("remove-btn")
+
+// for(let i = 0; i < rem_arr.length; i++){
+//     rem_arr[i].addEventListener("click",()=>{
+//         alert("suiiiiiiiiii")
+//     })
+// }
 
 function check(b){
     for(let i = 0; i < library.length; i++){
