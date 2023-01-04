@@ -56,8 +56,9 @@ display_btn.addEventListener("click",()=>{
                     <span id="ba">${library[i].author}</span>
                     <span id="br">${library[i].status}</span>
                     </div>
+                    <button class="remove-btn">Remove</button>
                     `
-                    //<button class="remove-btn">Remove</button>
+                  
         card.innerHTML = html
         card.classList.add('card')
         display_box.appendChild(card)
